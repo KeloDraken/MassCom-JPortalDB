@@ -6,7 +6,7 @@ SCHEMA MassComDB
 TABLE EmailAttachment
     id SEQUENCE
     fileTypeId INT
-    fileLocation CHAR (20000)
+    fileLocation CHAR (8000)
     emailId INT
 
 LINK AllowedAttachmentFileType fileTypeId

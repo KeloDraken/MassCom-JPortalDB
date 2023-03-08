@@ -5,7 +5,7 @@ SCHEMA MassComDB
 
 TABLE EmailMessage
     id SEQUENCE
-    body CHAR (20000)
+    body CHAR (8000)
     subject CHAR (255)
     sentDate TIMESTAMP
     senderId INT
