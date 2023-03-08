@@ -1,0 +1,17 @@
+DATABASE MassCom
+PACKAGE com.masscom.db
+SERVER MassComServer
+SCHEMA MassComDB
+
+TABLE User
+    id SEQUENCE
+    emailAddress CHAR (255)
+    firstName CHAR (255)
+    lastName CHAR (255)
+    dateJoined TIMESTAMP
+    propertyId INT
+
+LINK Property propertyId 
+
+KEY PKEY PRIMARY
+    id

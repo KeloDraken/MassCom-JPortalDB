@@ -1,0 +1,12 @@
+DATABASE MassCom
+PACKAGE com.masscom.db
+SERVER MassComServer
+SCHEMA MassComDB
+
+TABLE Property
+    id SEQUENCE
+    propertyName CHAR (255)
+    propertyAddress CHAR (255)
+
+KEY PKEY PRIMARY
+    id

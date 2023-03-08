@@ -1,0 +1,20 @@
+DATABASE MassCom
+PACKAGE com.masscom.db
+SERVER MassComServer
+SCHEMA MassComDB
+
+TABLE EmailMessage
+    id SEQUENCE
+    body CHAR (20000)
+    subject CHAR (255)
+    sentDate TIMESTAMP
+    senderId INT
+    recepientId INT
+    hasAttachments BOOLEAN
+    isDraft BOOLEAN
+
+LINK User senderId
+LINK User recepientId
+
+KEY PKEY PRIMARY
+    id

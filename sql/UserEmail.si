@@ -1,0 +1,17 @@
+DATABASE MassCom
+PACKAGE com.masscom.db
+SERVER MassComServer
+SCHEMA MassComDB
+
+
+TABLE UserEmail
+    id SEQUENCE
+    user_id INT
+    emailMessageId INT
+    datetimeReceived TIMESTAMP
+
+LINK User user_id
+LINK EmailMessage emailMessageId
+
+KEY PKEY PRIMARY
+    id

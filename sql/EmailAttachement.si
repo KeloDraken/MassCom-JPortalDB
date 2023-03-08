@@ -1,0 +1,16 @@
+DATABASE MassCom
+PACKAGE com.masscom.db
+SERVER MassComServer
+SCHEMA MassComDB
+
+TABLE EmailAttachment
+    id SEQUENCE
+    fileTypeId INT
+    fileLocation CHAR (20000)
+    emailId INT
+
+LINK AllowedAttachmentFileType fileTypeId
+LINK EmailMessage emailId
+
+KEY PKEY PRIMARY
+    id

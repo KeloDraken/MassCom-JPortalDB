@@ -1,0 +1,14 @@
+DATABASE MassCom
+PACKAGE com.masscom.db
+SERVER MassComServer
+SCHEMA MassComDB
+
+TABLE UserType
+    id SEQUENCE
+    user_id INT
+    userType CHAR (50)
+
+LINK User id
+
+KEY PKEY PRIMARY
+    id

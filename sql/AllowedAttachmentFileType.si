@@ -1,0 +1,12 @@
+DATABASE MassCom
+PACKAGE com.masscom.db
+SERVER MassComServer
+SCHEMA MassComDB
+
+TABLE AllowEmailAttachementFileType
+    id SEQUENCE
+    fileType CHAR (50)
+    fileExtension CHAR (50)
+
+KEY PKEY PRIMARY
+    id
