@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "jportal_postgres",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "magic_password"
+        }
+    ]
+}

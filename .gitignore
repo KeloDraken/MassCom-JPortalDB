@@ -1,0 +1,4 @@
+*.pyc
+env/
+python/
+jportal2_downloaded_templates/
