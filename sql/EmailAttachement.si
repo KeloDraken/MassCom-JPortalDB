@@ -9,7 +9,7 @@ TABLE EmailAttachment
     fileLocation CHAR (8000)
     emailId INT
 
-LINK AllowedAttachmentFileType fileTypeId
+LINK AllowEmailAttachementFileType fileTypeId
 LINK EmailMessage emailId
 
 KEY PKEY PRIMARY
